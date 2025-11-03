@@ -63,9 +63,9 @@ interface UIFactory {
 ```
 
 - This is the heart of Abstract Factory
-- This factory create multiple related objects
+- This will let concrete factories to create multiple related objects
 - All ui elements change via this
-- this will create two different sub concrete factories
+- this will let you to implement two different sub concrete factories
 
 ### 4. Concrete Factories
 
@@ -111,8 +111,8 @@ class ThemeFactoryProvider {
 
 ```
 
-- this class will help us to toggle the theme according to client choose
-- this a static method and gets full dark or light ui factory
+- this class will help us to toggle the theme according to client's preference
+- this is a static method and gets full dark or light ui factory
 
 ### 6. Client Code
 
@@ -149,6 +149,6 @@ public class Abstract_Factory_Pattern_Demo {
 ## When it should be used
 
 - You have multiple families of related objects
-- payment system
-- to implement ui for fast food chains or super markets
+- payment system / flutter theme ui
+- to implement system for fast food chains or super markets
 - main reason -> Object creation requires coordination
