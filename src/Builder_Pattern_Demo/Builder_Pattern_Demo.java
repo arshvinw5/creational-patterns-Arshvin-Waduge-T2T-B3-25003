@@ -2,10 +2,10 @@ package Builder_Pattern_Demo;
 
 class Computer {
   // creating private variables
-  private final String CPU;
-  private final int RAM;
-  private final int storage;
-  private final String graphicsCard;
+  private String CPU;
+  private int RAM;
+  private int storage;
+  private String graphicsCard;
 
   // Private constructor to force use of Builder
   private Computer(Builder builder) {
