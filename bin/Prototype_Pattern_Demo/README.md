@@ -57,7 +57,7 @@ public Document(String title, String content) {
 - The try / catch : super.clone() can throw CloneNotSupportedException if the class does not implement Cloneable. and Because Document implements Cloneable, this exception should never occur — so the code converts it to an AssertionError (a runtime error) to indicate "this should not happen".
 
 - super.clone() : This creates a copy of the current object
-- Copies references for objects (e.g., StringBuilder) — both original and copy now reference the same StringBuilder instance.
+- Copies references for objects (eg: StringBuilder) — both original and copy now reference the same StringBuilder instance.
 - then We assign the result to Document because super.clone() returns Object.
 - this.content.toString() creates a String snapshot of the original content.
 - new StringBuilder(content) makes a brand-new StringBuilder containing the same characters as I mentioned this above
